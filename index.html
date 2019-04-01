@@ -13,19 +13,19 @@
 <body>
     <!-- The main parent container -->
     <div id="app">
+        <div class="row">
+            <div id="title">
+                <h1>Fullstack for hire</h1>
+            </div>
 
-        <div id="title">
-            <h1>Fullstack for hire</h1>
+            <!-- Header parent-child -->
+            <div id="header">
+                <a href=""><button class="headlink"><i class="material-icons">home</i>Home</button></a>
+                <a href=""><button class="headlink followcell"><i class="material-icons">assignment</i>Resume</button></a>
+                <a target="_blank" href="https://github.com/piercecollazo"><button class="headlink followcell"><i class="material-icons">cloud_download</i>Git</button></a>
+                <a href=""><button class="headlink followcell"><i class="material-icons">mail</i>Contact</button></a>
+            </div>
         </div>
-
-        <!-- Header parent-child -->
-        <div id="header">
-            <a href=""><button class="headlink"><i class="material-icons">home</i>Home</button></a>
-            <a href=""><button class="headlink followcell"><i class="material-icons">assignment</i>Resume</button></a>
-            <a target="_blank" href="https://github.com/piercecollazo"><button class="headlink followcell"><i class="material-icons">cloud_download</i>Git</button></a>
-            <a href=""><button class="headlink followcell"><i class="material-icons">mail</i>Contact</button></a>
-        </div>
-
         <!-- Content holder for image slideshow and summary text -->
         <div id="content">
 
@@ -38,8 +38,8 @@
                     <li data-target="#slideshow" data-slide-to="2"></li>
                 </ul>
 
-                <div class="carousel-inner active">
-                    <div class="carousel-item">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
                         <img class="image" id="img1" src="./assets/images/howi1.jpg">
                         <h1 class="imageTitle">Hypothetical Project</h1>
                         <p class="summary">This is really just a filler summary for a hypothetical project to layer over an image.</p>
