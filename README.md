@@ -1,2 +1,2 @@
-# ResumeSiteGridNoMedia
-The grid layout of a resume site template WITHOUT the use of media queries.
+# Resume Site v2
+Another iteration of  resume site, using all tools learned up to date with no restrictions.
