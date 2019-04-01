@@ -14,72 +14,79 @@
     <!-- The main parent container -->
     <div id="app">
         <div class="row">
-            <div id="title">
-                <h1>Fullstack for hire</h1>
+            <div class="row">
+                <div id="title">
+                    <h1>Fullstack for hire</h1>
+                </div>
             </div>
 
             <!-- Header parent-child -->
-            <div id="header">
-                <a href=""><button class="headlink"><i class="material-icons">home</i>Home</button></a>
-                <a href=""><button class="headlink followcell"><i class="material-icons">assignment</i>Resume</button></a>
-                <a target="_blank" href="https://github.com/piercecollazo"><button class="headlink followcell"><i class="material-icons">cloud_download</i>Git</button></a>
-                <a href=""><button class="headlink followcell"><i class="material-icons">mail</i>Contact</button></a>
+            <div class="row">
+                <div id="header">
+                    <a href=""><button class="headlink"><i class="material-icons">home</i>Home</button></a>
+                    <a href=""><button class="headlink followcell"><i class="material-icons">assignment</i>Resume</button></a>
+                    <a target="_blank" href="https://github.com/piercecollazo"><button class="headlink followcell"><i class="material-icons">cloud_download</i>Git</button></a>
+                    <a href=""><button class="headlink followcell"><i class="material-icons">mail</i>Contact</button></a>
+                </div>
             </div>
         </div>
         <!-- Content holder for image slideshow and summary text -->
-        <div id="content">
+        <div class="row">
+            <div id="content">
+                <div class="row">
+                    <!-- image slideshow -->
+                    <div id='slideshow' class="carousel slide col-sm-12" data-ride="carousel">
 
-            <!-- image slideshow -->
-            <div id='slideshow' class="carousel slide" data-ride="carousel">
+                        <ul class="carousel-indicators">
+                            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                            <li data-target="#slideshow" data-slide-to="1"></li>
+                            <li data-target="#slideshow" data-slide-to="2"></li>
+                        </ul>
 
-                <ul class="carousel-indicators">
-                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
-                    <li data-target="#slideshow" data-slide-to="1"></li>
-                    <li data-target="#slideshow" data-slide-to="2"></li>
-                </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="image" id="img1" src="./assets/images/howi1.jpg">
+                                <h1 class="imageTitle">Hypothetical Project</h1>
+                                <span class="summary">This is really just a filler summary for a hypothetical project to layer over an image.</span>
+                            </div>
+                        
+                            <div class="carousel-item">
+                                <img class="image" id="img2" src="./assets/images/howi2.jpg">
+                                <h1 class="imageTitle">Theoretical Project</h1>
+                                <p class="summary">This is really just a filler summary for a theoretical project to layer over an image.</p>
+                            </div>
+                        
+                            <div class="carousel-item">
+                                <img class="image" id="img3" src="./assets/images/howi3.jpg">
+                                <h1 class="imageTitle">Ruminated Project</h1>
+                                <span class="summary">This is really just a filler summary for a ruminated project to layer over an image.</span>
+                            </div>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="image" id="img1" src="./assets/images/howi1.jpg">
-                        <h1 class="imageTitle">Hypothetical Project</h1>
-                        <p class="summary">This is really just a filler summary for a hypothetical project to layer over an image.</p>
+                            <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+
+                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                        <!-- Next and previous buttons for image selection -->
+                        <!-- <a id="prev" onclick="plusSlide(-1)">&#10094</a>
+                        <a id="next" onclick="plusSlide(1)">&#10095</a> -->
                     </div>
-                
-                    <div class="carousel-item">
-                        <img class="image" id="img2" src="./assets/images/howi2.jpg">
-                        <h1 class="imageTitle">Theoretical Project</h1>
-                        <p class="summary">This is really just a filler summary for a theoretical project to layer over an image.</p>
-                    </div>
-                
-                    <div class="carousel-item">
-                        <img class="image" id="img3" src="./assets/images/howi3.jpg">
-                        <h1 class="imageTitle">Ruminated Project</h1>
-                        <p class="summary">This is really just a filler summary for a ruminated project to layer over an image.</p>
-                    </div>
-
-                    <a class="carousel-control-prev" href="#slideshow" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
                 </div>
-                <!-- Next and previous buttons for image selection -->
-                <!-- <a id="prev" onclick="plusSlide(-1)">&#10094</a>
-                <a id="next" onclick="plusSlide(1)">&#10095</a> -->
-            </div>
 
-            <div id="homeText">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mi, ornare nec dui nec, aliquam posuere nisi. Nam non euismod nibh. Nam maximus elit in mi accumsan, nec lobortis felis maximus. Pellentesque vestibulum sit amet lacus tristique hendrerit. Vivamus quis iaculis nisl, quis porttitor nibh. Aliquam vitae aliquet mauris. Praesent tincidunt rhoncus lacus.</p>
-            </div>
+                <div id="homeText">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo mi, ornare nec dui nec, aliquam posuere nisi. Nam non euismod nibh. Nam maximus elit in mi accumsan, nec lobortis felis maximus. Pellentesque vestibulum sit amet lacus tristique hendrerit. Vivamus quis iaculis nisl, quis porttitor nibh. Aliquam vitae aliquet mauris. Praesent tincidunt rhoncus lacus.</p>
+                </div>
 
-            <!-- dots beneath slideshow to denote image selected -->
-            <!-- <div class="navdots">
-                <button class="dot" onclick="currentSlide(0)"></button>
-                <button class="dot" onclick="currentSlide(1)"></button>
-                <button class="dot" onclick="currentSlide(2)"></button>
-            </div> -->
+                <!-- dots beneath slideshow to denote image selected -->
+                <!-- <div class="navdots">
+                    <button class="dot" onclick="currentSlide(0)"></button>
+                    <button class="dot" onclick="currentSlide(1)"></button>
+                    <button class="dot" onclick="currentSlide(2)"></button>
+                </div> -->
+            </div>
         </div>
 
         <!-- footer area(extrenuous links, trademark, etc. to avoid empty space) -->
