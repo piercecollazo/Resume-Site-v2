@@ -1,28 +1,25 @@
-body{
-    height:100vh;
-    width:100vw;
-    background-color: white;
+.container{
+    width: 100vw;
+    height: 100vh;
 }
-    
 
 #app{
-    /* display: grid;
-    grid-template-columns:repeat(auto-fit, 200px);
-    grid-template-rows: repeat(10, 10vh); */
     width:100vw;
     height:100vh;
 }
-/* header area */
+
+/* =================== */
+/* === header area === */
+/* =================== */
+
 #title{
     background-color: rgb(166, 166, 255);
-    /* grid-area:1/1/1/1; */
     width:100vw;
     height:10vh;
     font-size:1em;
     text-align: center;
 }
 #header{
-    /* grid-area:2/1/2/1; */
     font-size:1em;
     text-align: center;
     background-color: rgb(2, 80, 126);
@@ -36,7 +33,6 @@ body{
 }
 
 button{
-    /* grid-area:2/1/2/1; */
     background-color: rgb(2, 80, 126);
     padding: 5px px;
     font-size: 1em;
@@ -45,16 +41,13 @@ button{
     border-radius: 4px;
     border-width: 0px;
 }
-/* content area */
+/* ===================== */
+/* === content area ==== */
+/* ===================== */
 #content{
-    /* grid-area:3/1/9/2; */
-    /* display:grid; */
-    /* grid-template-columns:repeat(auto-fit, 100px);
-    grid-template-rows:repeat(auto-fit, 100px); */
     background-color: white;
     width:100vw;
     height:80vh;
-    justify-self: start;
     
 }
 .image{
@@ -63,96 +56,32 @@ button{
 } 
 .imageTitle{
     color:white;
-    /* position: relative; */
     background-color: rgba(0, 0, 0, 0.274);
     font-size:1em;
-    width:80vw;
-    /* bottom:15.5vh; */
 } 
 
 .summary{
     color: white;
     background-color:rgba(0, 0, 0, 0.274);
     font-size: 1em;
-    /* position: relative; */
-    /* bottom: 18.2vh; */
-    /* text-align: start; */
-    width:80vw;
 }
 
 #homeText{
-    /* grid-area:3/1/3/3; */
     font-size: 1em;
-    text-align: center;
-    width:90vw;
-    /* position: relative; */
-    /* top:19vh; */
+    /* text-align: center; */
+    width:100vw;
 
 }
-
-/* .fade{
-    -webkit-animation-duration: 1.5s;
-    animation:  fade;
-    animation-duration: 1.5s;
-} */
 
 #slideshow{
-    /* grid-area:1/1/1/2; */
     width:80vw;
-    /* position: relative; */
-    /* right:10vw; */
-    /* margin-top:-3vh; */
 } 
-/* slideshow controls */
-/* #next, #prev{
-    display:none;
-    position: relative;
-    bottom:500px;
-    color:rgb(255, 255, 255);
-    font-size:30px;
-    font-weight:bold;
-    position:absolute;
-    top:50px;
-}
-
-#next:hover, #prev:hover{
-    background-color:rgba(0, 0, 0, 0.247);
-}
-#next{
-    position: absolute;
-
-    left:180px;
-}
-.navdots{
-    grid-area:2/2/2/2;
-    display:none;
-    justify-content: center;
-    margin-top:-4vh;
-    position: relative;
-    bottom:4vh;
-}
-.dot{
-    border-radius: 50%;
-    background-color: darkslategray;
-    margin: 0 2px;
-    padding:  8px 8px;
-} */
-
-/* .active, .dot:hover{
-    border-radius: 50%;
-    background-color: rgb(107, 179, 179);
-    margin: 0 2px;
-    padding:  8px 8px;
-} */
-
-/* footer area */
+/* =================== */
+/* === footer area === */
+/* =================== */
 #footer{
-    /* grid-area:10/1/10/1; */
     background-color: rgb(166, 166, 255);
     font-size: 10px;
-    text-align: center;
     width: 100vw;
     height:10vh;
-    margin-top:5vh;
-    align-self:end;
 }
