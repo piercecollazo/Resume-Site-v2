@@ -1,3 +1,5 @@
+
+// Resume
 const job1 = {
     company: 'BSD llc',
     position: 'Production Assistant/Sound engineer',
@@ -16,5 +18,26 @@ const job3 = {
     time: '2018'
 }
 
-const skills = ['HTML/CSS', 'Boostrap 4', 'Javascript']
+// Projects
+const proj1 = {
+    name: 'Hypothetical Project',
+    summary: '',
+    link: ''
+}
+
+const proj2 = {
+    name: 'Hypothetical Project',
+    summary: '',
+    link: ''
+}
+
+const proj3 = {
+    name: 'Hypothetical Project',
+    summary: '',
+    link: ''
+}
+
+// Array holders of objects
+const skills = ['HTML/CSS', 'Boostrap 4', 'Javascript'];
 const resume = [job1, job2, job3];
+const projects = [proj1, proj2, proj3];

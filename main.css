@@ -67,8 +67,8 @@ button{
 }
 
 #homeText{
-    font-size: 1em;
-    /* text-align: center; */
+    font-size: 0.9em;
+    text-align: center;
     width:100vw;
 
 }
@@ -84,4 +84,5 @@ button{
     font-size: 10px;
     width: 100vw;
     height:10vh;
+    /* padding-top: -30%; */
 }
