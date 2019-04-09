@@ -125,7 +125,20 @@ button{
 } 
 
 @media screen and (min-width: 576px){
-    
+    .image{
+        width: 85vw;
+        padding-left: 15vw;
+    }
+
+    .carousel-control-prev-icon{
+        position: relative;
+        left: 10vw;
+    }
+
+    .carousel-control-next-icon{
+        position: relative;
+        right: 10vw;
+    }
 }
 /* =================== */
 /* === footer area === */
