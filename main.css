@@ -45,10 +45,42 @@ button{
 /* ===================== */
 /* === Contact Modal === */
 /* ===================== */
+
+.modal-header{
+    background-color: rgb(174, 246, 247);
+}
+
+.modal-body{
+    background-color: rgb(218, 233, 254);
+}
+
+.modal-footer{
+    background-color: rgb(174, 246, 247);
+}
+
 #message-field{
     width: 90vw;
     height: 30vh;
-    text-
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#name-field{
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    width:40vw;
+}
+
+#email-field{
+    border-style: inset;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    width:40vw;
 }
 /* ===================== */
 /* === content area ==== */

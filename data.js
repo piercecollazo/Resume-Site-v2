@@ -41,3 +41,15 @@ const proj3 = {
 const skills = ['HTML/CSS', 'Boostrap 4', 'Javascript'];
 const resume = [job1, job2, job3];
 const projects = [proj1, proj2, proj3];
+
+// ====================
+// === contact info ===
+// ====================
+
+// This is a test case for storing user inputs from the contact modal
+
+let contactTest = {
+    name: '',
+    email: '',
+    message: ''
+}
