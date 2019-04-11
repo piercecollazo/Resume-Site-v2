@@ -1,0 +1,21 @@
+{
+    "jobs": {
+        "job1": {
+            "company": "BSD llc",
+            "position": "Production Assistant/Sound engineer",
+            "time": "2016-2017"
+        },
+
+        "job2": {
+            "company": "NYC Ferry",
+            "position": "Deckhand",
+            "time": "2017-2018"
+        },
+
+        "job3": {
+            "company": "Micro Center",
+            "position": "Sales associate",
+            "time": "2018"
+        }
+    }
+}
