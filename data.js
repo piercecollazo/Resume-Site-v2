@@ -1,7 +1,7 @@
 
 // Resume
 const job1 = {
-    company: 'BSD llc',
+    company: 'BSD LLC',
     position: 'Production Assistant/Sound engineer',
     time: '2016-2017'
 }
@@ -19,28 +19,31 @@ const job3 = {
 }
 
 // Projects
-const proj1 = {
-    name: 'Hypothetical Project',
-    summary: '',
-    link: ''
+const skill1 = {
+    name: 'Front-end Web Development',
+    summary: 'HTML5, CSS, Javascript',
+    traits: {
+        trait1: 'Bootstrap 4',
+        trait2: 'JSON',
+        trait3: '"Mobile first" development'
+    }
 }
 
-const proj2 = {
-    name: 'Hypothetical Project',
-    summary: '',
-    link: ''
-}
+// const skill2 = {
+//     name: '',
+//     summary: '',
+//     traits: ''
+// }
 
-const proj3 = {
-    name: 'Hypothetical Project',
-    summary: '',
-    link: ''
-}
+// const skill3 = {
+//     name: '',
+//     summary: '',
+//     traits: ''
+// }
 
 // Array holders of objects
-const skills = ['HTML/CSS', 'Boostrap 4', 'Javascript'];
 const resume = [job1, job2, job3];
-const projects = [proj1, proj2, proj3];
+const skills = [skill1];
 
 // ====================
 // === contact info ===

@@ -18,12 +18,14 @@ function displayHome(event){
   document.querySelector('#resume-page').className = 'container-fluid d-none'
 }
 
+// This function uses the main page to cycle
 function displayResume(event){
   event.preventDefault();
   document.querySelector('#content').className = 'container-fluid d-none'
   document.querySelector('#resume-page').className = 'container-fluid'
-  const mother = document.querySelector('#resume-mother');
-  if(mother.hasChildNodes()){
+  const employMother = document.querySelector('#resume-mother');
+  const skillMother = document.querySelector('#skills-mother');
+  if(employMother.hasChildNodes() || skillMother.hasChildNodes()){
     clearResume();
     for(let i = 0; i < resume.length; i++){
       resumeList(i);      
@@ -37,12 +39,16 @@ function displayResume(event){
 
 function resumeList(i){
   // Basic code for making a list within a list
-  let mother = document.querySelector('#resume-mother');
+  let employMother = document.querySelector('#resume-mother');
   let newLine = document.createElement('li');
   let newList = document.createElement('ul');
-    newList.className = 'child-list'
+  let skillMother = document.querySelector('#skills-mother');
+  let newSkillLine = document.createElement('li');
+  let newSkillList = document.createElement('ul');
+  let newListTrait = document.createElement('ul');
 
-  // code for the lines of child list for the resume
+
+  // code for the lines of child list for the employment history
   let nameLine = document.createElement('li')
         nameLine.innerText = resume[i].company;
   let posLine = document.createElement('li')
@@ -50,12 +56,36 @@ function resumeList(i){
   let timeLine = document.createElement('li')
         timeLine.innerText =resume[i].time;
 
-  mother.appendChild(newLine);
+  // Employment history lists
+  employMother.appendChild(newLine);
   newLine.appendChild(newList);
   newList.appendChild(nameLine);
   newList.appendChild(posLine);
   newList.appendChild(timeLine);
-  
+
+  // code for the lines of child list for the skills
+  if(skills[i] != undefined){
+    let skillName = document.createElement('li')
+        skillName.innerText = skills[i].name
+    let skillSumm = document.createElement('li')
+        skillSumm.innerText = skills[i].summary
+    let skillTrait1 = document.createElement('li')
+        skillTrait1.innerText = skills[i].traits.trait1
+    let skillTrait2 = document.createElement('li')
+        skillTrait2.innerText = skills[i].traits.trait2
+    let skillTrait3 = document.createElement('li')
+        skillTrait3.innerText = skills[i].traits.trait3
+  // Skills list
+    skillMother.appendChild(newSkillLine);
+    newSkillLine.appendChild(newSkillList);
+    newSkillList.appendChild(skillName);
+    newSkillList.appendChild(skillSumm);
+    newSkillList.appendChild(newListTrait);
+    newListTrait.appendChild(skillTrait1);
+    newListTrait.appendChild(skillTrait2);
+    newListTrait.appendChild(skillTrait3);
+  }
+
 }
 
 function contact(event){
@@ -71,8 +101,12 @@ function contact(event){
 }
 
 function clearResume(){
-  let mother = document.querySelector('#resume-mother');
-  while(mother.hasChildNodes()){
-    mother.removeChild(mother.firstChild)
+  let employMother = document.querySelector('#resume-mother');
+  let skillMother = document.querySelector('#skills-mother')
+  while(employMother.hasChildNodes()){
+    employMother.removeChild(employMother.firstChild)
+  }
+  while(skillMother.hasChildNodes()){
+    skillMother.removeChild(skillMother.firstChild)
   }
 }

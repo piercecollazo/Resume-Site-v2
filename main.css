@@ -151,4 +151,6 @@ button{
     background-color: rgb(166, 166, 255);
     font-size: 10px;
     width: 100vw;
+    position: relative;
+    bottom: -45vh;
 }
