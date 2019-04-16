@@ -134,6 +134,12 @@ button{
         padding-left: 15vw;
     }
 
+    .imageTitle{
+        position: relative;
+        left: 20vw;
+        width:50%;
+    }
+
     .carousel-control-prev-icon{
         position: relative;
         left: 10vw;
@@ -141,9 +147,11 @@ button{
 
     .carousel-control-next-icon{
         position: relative;
-        right: 10vw;
+        right: 7vw;
     }
 }
+
+
 /* =================== */
 /* === footer area === */
 /* =================== */
